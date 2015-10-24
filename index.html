@@ -20,7 +20,9 @@ Mining" />
 
 <link rel="stylesheet" type="text/css" href="css/reset.css" />
 
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet" type="text/css"
+href="http://fonts.googleapis.com/css?family=Open+Sans|Dosis">
+
 
 <link rel="stylesheet" href="lib/fontawesome/css/font-awesome.min.css">
 <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
@@ -52,16 +54,33 @@ Mining" />
     <!-- each slide must be a div with class step,  must have some co-ordinates -->
     <div id="title" class="step" data-x="0" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
         <h1>Content &amp; Data Mining Research Topics in Social Science</h1>
-        <p>Dr. Alexander O&apos;Connor</p>
+        <p class="name">Dr. Alexander O&apos;Connor</p>
         <p class="contact"><i class="fa fa-envelope"></i><a href="mailto:Alexander.OConnor@dcu.ie"> Alexander.OConnor@dcu.ie</p>
             <p class="contact">@<a href="http://www.twitter.com/uberalex">uberalex</a></p>
             <div id="foot">
                 <a href="http://www.adaptcentre.ie"><img src="img/adapt.png" /></a>
-                <a href="http://www.dcu.ie"><img src="img/dcu.png"></a>
+                <a href="http://www.dariah.eu"><img src="img/dariah.png"></a>
+                <a href="http://www.dcu.ie"><img src="img/dcu.jpg"></a>
             </div>
         </div>
         <div id="definition" class="step big" data-x="1200" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
-            <div id="disciplines"></div>
+            <div>
+                <ul id="topdisc">
+                    <li>Economics</li>
+                    <li>Education</li>
+                    <li>Psychology</li>
+                    <li>Linguistics</li>
+                    <li>Politics</li>
+                </ul>
+                <h1>Social Science</h1>
+                <ul id="botdisc">
+                    <li>Gender</li>
+                    <li>Geography</li>
+                    <li>Communication</li>
+                    <li>Philosophy</li>
+                    <li>Law</li>
+                </ul>
+            </div>           
             <p class="source">David Lazet et. al. <em>Life in the network: the coming age of
                 computational social science</em> Science. 2009 Feb 6;
             323(5915): 721–723.</p>
@@ -77,6 +96,7 @@ Mining" />
         </div>
         <div id="sevenRules" class="step big" data-x="1200" data-y="1200" data-z="0"
             data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+            <h1>Seven Rules</h1>
             <ol>
                 <li>Surprise should be possible</li>
                 <li>Look for the difference that makes the difference</li>
@@ -98,7 +118,7 @@ Mining" />
         </div>
         <div id="TypesOfEvidence" class="step big" data-x="2400" data-y="0" data-z="0"
             data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
-            <h1>Evidence</h1>
+            <h1>(Un)Obtrusive Evidence</h1>
             <p class="source">Markus Strohmaier and Claudia Wagner
             <em>Computational Social Science</em>
             IEEE Intelligent Systems, September/October 2014</p>
@@ -111,10 +131,10 @@ Mining" />
                 with users.
             </div>
         </div>
-        <div id="MiningSocial" class="step" data-x="2200" data-y="-100" data-z="0"
+        <div id="MiningSocial" class="step contained" data-x="2400"
+            data-y="220" data-z="200"
             data-rotate-x="0" data-rotate-y="0" data-rotate-z="0"
             data-scale=".33">
-            <h1>Traces of Human Activity: Mining Social Media</h1>
             <img src="img/calmvsdjia.jpg" />
             <img src="img/fbvocab.png" />
             <p class="source">Fig 1.: Bollen, Johan et. al <em>Twitter Mood
@@ -127,9 +147,9 @@ Mining" />
                 and how rumours disseminate</p>
             </div>
         </div>
-        <div id="RiskOfSharing" class="step" data-x="2200" data-y="-100" data-z="-1000" 
+        <div id="RiskOfSharing" class="step" data-x="2200" data-y="-50" data-z="-1000" 
             data-rotate-x="90" data-rotate-y="0" data-rotate-z="0"
-            data-scale="0.33">
+            data-scale="0.25">
             <p><i class="fa fa-twitter fa-5x"></i><br />
             <ol>
                 <li>Information Quality</li>
@@ -143,8 +163,9 @@ Mining" />
                 epidemic on Twitter: challenges for health informatics.
             </em> In: Proceedings of;. 17th International Symposium on Health Information Management Research – ISHIMR 2015, York, UK, 25-26 June 2015</p>
         </div>
-        <div id="GovernmentData" class="step" data-x="1000" data-y="-100" data-z="200"
-            data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="0.25">
+        <div id="GovernmentData" class="step contained" data-x="2600" data-y="0" data-z="200"
+            data-rotate-x="0" data-rotate-y="0" data-rotate-z="0"
+            data-scale="0.25">
             <div id="enron">
                 <img src="img/enron.png" />
                 <blockquote>
@@ -175,7 +196,7 @@ Mining" />
                 and other categories.</p>
             </div>
         </div>
-        <div id="OpenImpact" class="step" data-x="1000" data-y="-100"
+        <div id="OpenImpact" class="step" data-x="2600" data-y="-50"
             data-z="-2500"
             data-rotate-x="0" data-rotate-y="90" data-rotate-z="0" data-scale="0.25">
             <img src="img/europarl.png" />
@@ -190,7 +211,8 @@ Mining" />
                 than the raw set.</p>
             </div>
         </div>       
-        <div id="WebExperiments" class="step" data-x="1000" data-y="100" data-z="200"
+        <div id="WebExperiments" class="step contained" data-x="2200"
+            data-y="0" data-z="200"
             data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="0.25">
             <img src="img/turk.jpg" />
             <p class="source">John Bohannon <em>Social Science for
@@ -207,97 +229,122 @@ Mining" />
                 nothing more than a mug shot.</p>
             </div>
         </div>
-        <div id="Reproducibility" class="step" data-x="1000" data-y="100"
-            data-z="200" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="0.25">
-            <p>In very specific situations, it can be effectively illegal
+        <div id="Reproducibility" class="step" data-x="2300" data-y="2000"
+            data-z="-2500" data-rotate-x="0" data-rotate-y="90" data-rotate-z="0" data-scale="0.25">
+            <p class="quote">In very specific situations, it can be effectively illegal
             under UK law to conduct a replication study</p>
             <p class="source">Pete Etchells <em>Replication frustration:
                 what stops experiments being reliably repeated?</em> The
-            Guardian, 16 October, 2015</p> 
+            Guardian, 16 October, 2015<br />Bissell M (2013) Reproducibility: The risks of the replication drive. Nature 503: 333–334. doi: 10.1038/503333a</p> 
         </div>
-        <div id="SocialScienceAtScale"  class="step" data-x="1400" data-y="-100"
-            data-z="200">
+        <div id="SocialScienceAtScale"  class="step big" data-x="3600" data-y="0"
+            data-z="200" data-scale="1">
             <h1>Studies at Massive Scale</h1>
         </div>
-        <div id="SmartCities" class="step" data-x="1400" data-y="-100" data-z="200"
-            data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="0.25">
+        <div id="SmartCities" class="step contained" data-x="3400" data-y="0" data-z="200"
+            data-rotate-x="0" data-rotate-y="0" data-rotate-z="0"
+            data-scale="0.33">
             <img src="img/smartcity.png" />
             <p class="source">Source:
             <a href="http://www.emunicipality.com/">eMunicipality</a><p>
         </div>
-    </div>
-    <div id="WebScience" class="step" data-x="1400" data-y="100" data-z="200"
-        data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="0.25">
-        <img src="img/web.jpg" />
-        <p class="source">Nigel Shadbolt, Wendy Hall, James A. Hendler,
-        William H. Dutton; <em>Web Science, a New Frontier</em>
-        Philosophical Transactions A, Royal Society</p>
-        <div class="notes">
-            <!--speaker notes-->
-            <p>The web is scale-less, it is a global, transformative
-            network worthy of its own multidisciplinary study. The unique
-            affordances of democratised, instant communication are only
-            slowly becoming apparent. The topic of web science itself is
-            underpinned entirely by the need for open access, transparency
-            and replicability, not least because it is such a dynamic
-            system.</p>
+
+        <div id="WebScience" class="step contained" data-x="3850" data-y="0" data-z="200"
+            data-rotate-x="0" data-rotate-y="0" data-rotate-z="0"
+            data-scale="0.33">
+            <img src="img/web.jpg" />
+            <p class="source">Nigel Shadbolt, Wendy Hall, James A. Hendler,
+            William H. Dutton; <em>Web Science, a New Frontier</em>
+            Philosophical Transactions A, Royal Society</p>
+            <div class="notes">
+                <!--speaker notes-->
+                <p>The web is scale-less, it is a global, transformative
+                network worthy of its own multidisciplinary study. The unique
+                affordances of democratised, instant communication are only
+                slowly becoming apparent. The topic of web science itself is
+                underpinned entirely by the need for open access, transparency
+                and replicability, not least because it is such a dynamic
+                system.</p>
+            </div>
         </div>
-    </div>
-    <div id="conclusion" class="step big" data-x="1200" data-y="0" data-z="0"
-        data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
-
-        <p class="source"> 
-        <div class="notes">
-
+        <div id="conclusion" class="step big" data-x="2400" data-y="1200" data-z="0"
+            data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+            <h1>Six Provocations</h1>
+            <ol>
+                <li>Automating Research Changes the Definition of Knowledge</li>
+                <li>Claims to Objectivity and Accuracy are Misleading </li>
+                <li>Bigger Data are Not Always Better Data</li>
+                <li>Not All Data Are Equivalent</li>
+                <li>Just Because it is Accessible Doesn’t Make it Ethical </li>
+                <li> Limited Access to Big Data Creates New Digital Divides </li>
+            </ol>
+            <p class="source">Boyd, Danah, and Kate Crawford. "Critical
+            questions for big data: Provocations for a cultural, technological,
+            and scholarly phenomenon." Information, communication &amp; society 15.5 (2012): 662-679.</p>
         </div>
+        <div id="closing" class="step big" data-x="1800" data-y="2200"
+            data-z="0" data-scale="1">
+            <img src="img/camera.jpg" />
+            <div class="notes">
+                The society in which we live is increasingly dominated by
+                algorithmic reasoning, mass measurement, and information
+                saturation. The social sciences are a path to retaining awareness
+                of the fundamental humanity, the individual as part of society
+                that is the heart of all endeavours. However, without the ability
+                to conduct open, shared, reproducible and replicable science, and
+                without clear security in sharing (and protecting) our data, models,
+                code and papers, we will have a deeper divide between those whom
+                the system privileges, and those who are left behind, both inside
+                and out. 
+            </div>
+        </div>
+        <!-- keep an overview slide, you may wish to change the scaling and / or the co-ordinates -->
+        <div id="overview" class="step" data-x="2000" data-y="1000" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="4">
+        </div>
+
     </div>
-    <!-- keep an overview slide, you may wish to change the scaling and / or the co-ordinates -->
-    <div id="overview" class="step" data-x="0" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="2">
+    <!-- end of impress -->
+
+    <!-- a bar at the top with a timer. You could put other text or info in here by adding more spans -->
+    <div id="navbar"><div id="timebar">&nbsp;</div><p> <span id="timer">Click to Start Timer.</span></p><p><input id="notebox" type="checkbox" /><label for="notebox">show notes</label></p></div>
+
+    <!-- a little menu based on the slides -->
+    <div class="hint note">
+        <p>Use the spacebar or arrow keys to navigate</p>
     </div>
 
-</div>
-<!-- end of impress -->
+    <!-- clicking on this reveals the quick-navigation bar -->
+    <div id="menubutton" tabindex="1">
+        <i class="fa fa-bars fa-lg"></i>
+    </div>
 
-<!-- a bar at the top with a timer. You could put other text or info in here by adding more spans -->
-<div id="navbar"><div id="timebar">&nbsp;</div><p> <span id="timer">Click to Start Timer.</span></p><p><input id="notebox" type="checkbox" /><label for="notebox">show notes</label></p></div>
-
-<!-- a little menu based on the slides -->
-<div class="hint note">
-    <p>Use the spacebar or arrow keys to navigate</p>
-</div>
-
-<!-- clicking on this reveals the quick-navigation bar -->
-<div id="menubutton" tabindex="1">
-    <i class="fa fa-bars fa-lg"></i>
-</div>
-
-<!-- quickly get to different slides here, the list is populated from the IDs of the slides -->
-<div id="navmenu">
-</div>
+    <!-- quickly get to different slides here, the list is populated from the IDs of the slides -->
+    <div id="navmenu">
+    </div>
 
 
 
-<script>
+    <script>
 if ("ontouchstart" in document.documentElement) {
     document.querySelector(".hint").append('p').text('Tap on the left or right to navigate');
 }
-</script>
+    </script>
 
-<!-- LESS CSS -->
-<script src="lib/less.js/dist/less-1.7.5.js"></script>
-<!-- Load the presentation tool -->
-<script src="lib/impress.js/js/impress.js"></script>
-<!-- Load D3 -->
-<script src="lib/d3/d3.min.js"></script>
-<!-- Load the timer -->
-<script src="js/timer.js"></script>
-<!-- Menu -->
-<script src="js/navmenu.js"></script>
+    <!-- LESS CSS -->
+    <script src="lib/less.js/dist/less-1.7.5.js"></script>
+    <!-- Load the presentation tool -->
+    <script src="lib/impress.js/js/impress.js"></script>
+    <!-- Load D3 -->
+    <script src="lib/d3/d3.min.js"></script>
+    <!-- Load the timer -->
+    <script src="js/timer.js"></script>
+    <!-- Menu -->
+    <script src="js/navmenu.js"></script>
 
-<!-- Initialisation -->
-<script>impress().init();</script>
-<script>var time = 1000 * 60 * 20;
+    <!-- Initialisation -->
+    <script>impress().init();</script>
+    <script>var time = 1000 * 60 * 20;
 var clock = timer(time, update);
-</script>
-</body>
-</html>
+    </script>
+    </body>
+    </html>

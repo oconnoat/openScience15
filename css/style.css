@@ -26,6 +26,16 @@ div.hint {
     display: none;
 }
 /* Tag Markup */
+body{
+    font-family: "Open Sans", sans-serif;
+}
+h1 {
+    font-family: Dosis, serif;
+}
+a, h1 {
+    color: #1976D2;
+    text-decoration: none;
+}
 strong {
     font-weight: bold;
 }
@@ -48,7 +58,6 @@ p.source {
 
 /* Impress-related markup */
 .impress-enabled .step.active {
-    background-color: #fff;:
 }
 
 /* make the non-active steps transparent */
@@ -76,19 +85,118 @@ p.source {
    left: 50%;
    margin-left: -125px;
 }
-.impress-on-overview div:hover{
-    opacity: 1;
-    background-color: #fff;
+.impress-on-definition div#definition{
+    background-color: #1976D2;
+    color: #fff;
+}
+.impress-on-definition{
+    background-color: #1976D2;
+}
+.impress-on-sevenRules div#sevenRules{
+    background-color: #FF9800;
+    color: #fff;
+}
+.impress-on-sevenRules{
+    background-color: #FF9800;
+}
+.impress-on-sevenRules div#sevenRules li{
+    background-color: #FF9800;
+    color: #fff;
 }
 
+.impress-on-sevenRules div#sevenRules h1{
+    color: #fff;
+}
+.impress-on-conclusion div#conclusion{
+    background-color: #388E3C;
+    color: #fff;
+}
+.impress-on-conclusion{
+    background-color: #388E3C;
+}
+.impress-on-conclusion div#conclusion li{
+    background-color: #388E3C;
+    color: #fff;
+}
+.impress-on-conclusion div#conclusion h1{
+    color: #fff;
+}
+.impress-on-definition div#definition div{
+    width: 100%;
+    position: absolute;
+    top: 25%;
+}
+.impress-on-definition div#definition h1{
+    color: #fff;
+}
+.impress-on-Reproducibility {
+    background: url('../img/Replication.jpg') center center no-repeat;
+    background-size: cover;
+}
+.impress-on-WebExperiments{
+    background: url('../img/turk.jpg') center center no-repeat;
+    background-size: contain;
+}
+.impress-on-WebExperiments div#WebExperiments {
+    background: none;
+}
+.impress-on-WebExperiments div#WebExperiments img{
+    display: none;
+}
+
+.impress-on-closing{
+    background: url('../img/camera.jpg') center center no-repeat;
+    background-size: cover;
+}
+.impress-on-closing div#closing img{
+    display: none;
+}
+.impress-on-TypesOfEvidence div.contained {
+    opacity: 1;
+}
+
+.impress-on-overview div.step:hover{
+    opacity: 1;
+    border: 5px solid #1976D2;
+}
 /* specific divs */
 div#title h1{
     text-align: center;
     margin: 10px;
+    margin-bottom: 10%;
     font-size: 2em;
-    font-family: 'Tangerine', sans-serif;
 }
-div#title{
+div#title img{
+    width: 100px;
+}
+div#title div#foot{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+div#title p.name{
+    text-align:center;
+    font-size: 1.5em;
+
+}
+div#title p.contact{
+    text-align: center;
+    font-family: monospace;
+    font-size: 0.5em;
+}
+
+
+div#definition{ 
+    color: #00aced;
+}
+div#definition ol{
+    width: 100%;
+}
+div#definition li{
+    font-size: 0.66em;
+    display: inline-block;
+    padding: 1%;
 }
 div#MiningSocial img {
     width:48%;
@@ -127,7 +235,14 @@ div#GovernmentData div#enron img{
     right: 0;
     top: 15%;
 }
-
+div#Reproducibility p.quote{
+    position: absolute;
+    text-align: center;
+    bottom: 25%;
+    width: 100%; 
+    background-color: rgba(64,64,64,0.75);
+    color: rgba(255,255,225,1);
+}
 div#GovernmentData div#talkEurope img{
     margin-left: 10%;;
     height: 300px;
@@ -144,16 +259,40 @@ div#GovernmentData blockquote p {
   font-family: monospace;
   display: inline;
 }
+div#WebExperiments img{
+    width:100%;
+}
 div#OpenImpact img{
     position: absolute;
     top: 30%;
     width: 100%;
 }
+div#SmartCities img{
+    width: 100%;
+}
 div#WebScience img{
     width:100%;
+}
+div#sevenRules ol, div#conclusion ol{
+    margin-left: 15%;
+    margin-top: 5%;
+    list-style: decimal outside none;
+}
+div#sevenRules li, div#conclusion li{
+    border-right: 2px solid #ddd;
+    padding 2px;
+    font-size: 0.66em;
+    width: 80%;
+    margin: 2%;
+    background-color: #eee;
+}
+div#closing img{
+    -webkit-filter: grayscale(100%);
+    width: 100%;
 }
 div#overview {
     display: none;
 }
+
 
 /* graph-related */
