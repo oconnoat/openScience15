@@ -1,0 +1,159 @@
+/* Custom CSS File for the impress presentation */
+/* To add Google Fonts, one option is to use @import(url('')); if you do, it must go before all other declarations except @charset
+ * another option is to create a font source block. This will allow you to have a local fallback. It also allows Truetype fallbacks an so on.
+ *
+ *
+ *
+ * An example block below 
+ * @font-face {
+ * font-family: 'Satisfy';
+ *  font-style: normal;
+ *  font-weight: 400;
+ *  src: local('Satisfy') url(http://themes.googleusercontent.com/static/fonts/satisfy/v4/tmRzDlQs5wZmOn9mIuLa-QLUuEpTyoUstqEm5AMlJo4.woff) format('woff'),
+ *  local('Satisfy') url('Satisfy.woff') format('woff'); 
+ * }
+ *
+ *
+ * */
+
+/* hint and unsupported content */
+div.fallback-message {
+    display: none;
+}
+
+
+div.hint {
+    display: none;
+}
+/* Tag Markup */
+strong {
+    font-weight: bold;
+}
+div.step{
+    min-width: 900px;
+    min-height: 700px;
+    font-size: 48px;
+}
+div.big h1{
+    text-align: center;
+    font-size: 2em;
+}
+
+p.source {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: 0.33em;
+}
+
+/* Impress-related markup */
+.impress-enabled .step.active {
+    background-color: #fff;:
+}
+
+/* make the non-active steps transparent */
+.step:not(.active) { opacity: 0.33; }
+
+/* Per-slide Markup uses .impress-on-slideID */
+.impress-not-supported div.fallback-message{
+    display: block;
+    height: 100px;
+    width: 250px;
+    margin-left: -125px;
+    margin-top: -50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+}
+.impress-on-title div.hint{
+   display: block;
+   font-size: 14px;
+   font-style: italic;
+   text-align: center;
+   width: 250px;
+   position: absolute;
+   left: 50%;
+   margin-left: -125px;
+}
+.impress-on-overview div:hover{
+    opacity: 1;
+    background-color: #fff;
+}
+
+/* specific divs */
+div#title h1{
+    text-align: center;
+    margin: 10px;
+    font-size: 2em;
+    font-family: 'Tangerine', sans-serif;
+}
+div#title{
+}
+div#MiningSocial img {
+    width:48%;
+    float: left;
+    border: 1px solid black;
+}
+div#RiskOfSharing i{ 
+    text-align: center;
+    color: #00aced;
+}
+div#RiskOfSharing ol{ 
+    list-style: decimal outside none;
+    margin-left: 25%;
+}
+div#GovernmentData h1{
+    background-color: #fff;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+}
+div#GovernmentData blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+div#GovernmentData div{
+    height: 350px;
+}
+div#GovernmentData div#enron img{
+    width: 50px;
+    position: absolute;
+    right: 0;
+    top: 15%;
+}
+
+div#GovernmentData div#talkEurope img{
+    margin-left: 10%;;
+    height: 300px;
+}
+div#GovernmentData blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+div#GovernmentData blockquote p {
+  font-family: monospace;
+  display: inline;
+}
+div#OpenImpact img{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+}
+div#WebScience img{
+    width:100%;
+}
+div#overview {
+    display: none;
+}
+
+/* graph-related */

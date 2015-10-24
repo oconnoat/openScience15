@@ -1,0 +1,303 @@
+<!doctype html>
+<!-- Based on impress.js Copyright 2011-2012 Bartek Szopka
+
+Released under the MIT and GPL (version 2 or later) Licenses.
+
+Note, this is a total mess of inconsistent css, html, javascript and content.
+It's probably a good example of how difficult it is for me to separate content with presentation in practice.
+-->
+
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=1024" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title> </title>
+
+<meta name="description" content="Discussion of Social Science, Text and Content
+Mining" />
+<meta name="author" content="Alexander O'Connor Alexander.OConnor@dcu.ie" />
+
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+
+<link rel="stylesheet" href="lib/fontawesome/css/font-awesome.min.css">
+<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+<!-- basic setup -->
+<!-- <link rel="stylesheet" type="text/css" href="css/base.css" /> -->
+<!-- menus and buttons -->
+<link rel="stylesheet" type="text/css" href="css/navmenu.css" />
+
+<!-- presentation-specific styling, which might be done with less instead of css -->
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<!-- <link rel="stylesheet/less" type="text/css" href="less/style.less"> -->
+
+
+<link rel="shortcut icon" href="img/favicon.png" />
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+<!--
+    For example this fallback message is only visible when there is `impress-not-supported` class on body.
+-->
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+    <!-- each slide must be a div with class step,  must have some co-ordinates -->
+    <div id="title" class="step" data-x="0" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+        <h1>Content &amp; Data Mining Research Topics in Social Science</h1>
+        <p>Dr. Alexander O&apos;Connor</p>
+        <p class="contact"><i class="fa fa-envelope"></i><a href="mailto:Alexander.OConnor@dcu.ie"> Alexander.OConnor@dcu.ie</p>
+            <p class="contact">@<a href="http://www.twitter.com/uberalex">uberalex</a></p>
+            <div id="foot">
+                <a href="http://www.adaptcentre.ie"><img src="img/adapt.png" /></a>
+                <a href="http://www.dcu.ie"><img src="img/dcu.png"></a>
+            </div>
+        </div>
+        <div id="definition" class="step big" data-x="1200" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+            <div id="disciplines"></div>
+            <p class="source">David Lazet et. al. <em>Life in the network: the coming age of
+                computational social science</em> Science. 2009 Feb 6;
+            323(5915): 721–723.</p>
+            <div class="notes">
+                <p>Social Sciences are a quest to understand the factors
+                that motivate human action and interaction, collectively and
+                individually. It has been fundamentally changed by the
+                abilit to mine massive data, but critical transparency,
+                ethical and openness challenges are
+                revealed in this process of discovery which must be
+                addressed.</p>
+            </div>
+        </div>
+        <div id="sevenRules" class="step big" data-x="1200" data-y="1200" data-z="0"
+            data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+            <ol>
+                <li>Surprise should be possible</li>
+                <li>Look for the difference that makes the difference</li>
+                <li>Build in reality checks</li>
+                <li>Replicate</li>
+                <li>Compare like with like</li>
+                <li>Study change</li>
+                <li>Let the method be the servant</li>
+            </ol>
+            <p class="source">Firebaugh, Glenn. <em>Seven Rules for Social Research.</em>Princeton: Princeton UP, 2008.</p>
+            <div class="notes">
+                Studying society is an overwhelming topic, big questions require big data.
+                Social Scientists have an extremely diverse collection of methods. One source
+                describes seven rules for Social Science research. Critical to high quality
+                social science research is that it is scientific: it seeks to uncover underlying
+                rules about the dynamics of people, groups, communities, societies, and even
+                civilisations.
+            </div>
+        </div>
+        <div id="TypesOfEvidence" class="step big" data-x="2400" data-y="0" data-z="0"
+            data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+            <h1>Evidence</h1>
+            <p class="source">Markus Strohmaier and Claudia Wagner
+            <em>Computational Social Science</em>
+            IEEE Intelligent Systems, September/October 2014</p>
+            <div class="notes">
+                <!--speaker notes-->
+                Social Science can use either direct or indirect approaches to
+                measuring human behaviour. <em>Unobtrusive</em> methodology works from
+                looking at the traces left by people's presence or actions;
+                <em>Obtrusive</em> methodology is direct: it experiments directly
+                with users.
+            </div>
+        </div>
+        <div id="MiningSocial" class="step" data-x="2200" data-y="-100" data-z="0"
+            data-rotate-x="0" data-rotate-y="0" data-rotate-z="0"
+            data-scale=".33">
+            <h1>Traces of Human Activity: Mining Social Media</h1>
+            <img src="img/calmvsdjia.jpg" />
+            <img src="img/fbvocab.png" />
+            <p class="source">Fig 1.: Bollen, Johan et. al <em>Twitter Mood
+                Predicts the Stock Market</em> Journal of Computational Science
+            2-1<br /> Fig. 2: Schwartz, H. Andrew, et al. <em>Personality, gender, and age in the language of social media: The open-vocabulary approach.</em> PloS one 8.9 (2013): e73791.</p>
+            <div class="notes">
+                <!--speaker notes-->
+                <p>Mining Facebook to understand gender, mining language change in
+                twitter, understanding how people react to disease, crisis
+                and how rumours disseminate</p>
+            </div>
+        </div>
+        <div id="RiskOfSharing" class="step" data-x="2200" data-y="-100" data-z="-1000" 
+            data-rotate-x="90" data-rotate-y="0" data-rotate-z="0"
+            data-scale="0.33">
+            <p><i class="fa fa-twitter fa-5x"></i><br />
+            <ol>
+                <li>Information Quality</li>
+                <li>Ethics &amp; Privacy</li>
+                <li><strong>Validity &amp; Reliability</strong></li>
+                <li>Representative Sample</li>
+                <li>Feasibility</li>
+            </ol>
+            </p>
+            <p class="source">Ahmed, W. and Bath, P.A. (2015)<em> The Ebola
+                epidemic on Twitter: challenges for health informatics.
+            </em> In: Proceedings of;. 17th International Symposium on Health Information Management Research – ISHIMR 2015, York, UK, 25-26 June 2015</p>
+        </div>
+        <div id="GovernmentData" class="step" data-x="1000" data-y="-100" data-z="200"
+            data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="0.25">
+            <div id="enron">
+                <img src="img/enron.png" />
+                <blockquote>
+                    <p>Thought you would</p>
+                </blockquote>
+                <h1>&uarr; vs. &darr;</h1>
+                <blockquote><p>Let's Discuss</p></blockquote>
+                <p class="source">Gilbert, Eric. "Phrases that signal workplace hierarchy." Proceedings of the ACM 2012 conference on Computer Supported Cooperative Work. ACM, 2012.</p>
+            </div>
+            <div id="talkEurope">
+                <img src="img/talkeurope.png"/>
+                <p class="source">Kemman, Max; Aggelen, Astrid van (2014): Talk
+                of Europe - Linking European Parliament Proceedings</p>
+            </div>
+            <div class="notes">
+                <!--speaker notes-->
+                <p>An interesting place where 'found' data has been used
+                extensively in social science has been in that data which has
+                been published by Governments, including open data portals, but
+                also of high interest has been data that has been released as
+                part of judicial inquiries or freedom of information. An example
+                of this is the enron email data set, which has been the source
+                of a vast number of studies. Similarly, a huge amount of
+                valuable work has been achieved on the proceedings of the
+                European Parliament. For example, the Talk of Europe Project
+                which publishes a high-quality linked open data version of the
+                proceedings, helping users access information by topic, country
+                and other categories.</p>
+            </div>
+        </div>
+        <div id="OpenImpact" class="step" data-x="1000" data-y="-100"
+            data-z="-2500"
+            data-rotate-x="0" data-rotate-y="90" data-rotate-z="0" data-scale="0.25">
+            <img src="img/europarl.png" />
+            <div class="notes">
+                <p>The Impact of openness and availability cannot be overstated.
+                This alone is some evidence of the fundamental importance of the
+                Europarl data set, which is the cornerstone of a vast amount of
+                computational linguistic research, especially cross-lingually.
+                A fundamental reason for why it has such impact and such value
+                is undoubtedly the fact that it is free, open, and high quality.
+                This means that the refined, curated data can be shared, rather
+                than the raw set.</p>
+            </div>
+        </div>       
+        <div id="WebExperiments" class="step" data-x="1000" data-y="100" data-z="200"
+            data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="0.25">
+            <img src="img/turk.jpg" />
+            <p class="source">John Bohannon <em>Social Science for
+                Pennies</em> Science vol.334 (2011)<br />Paolacci, Gabriele, Jesse Chandler, and
+            Panagiotis G. Ipeirotis. <em>Running experiments on amazon
+                mechanical turk.</em> Judgment and Decision making 5.5 (2010):
+            411-419.</p>
+            <div class="notes">
+                <p>In just a few weeks, Lenz had all the data
+                his group needed. In spite of the cultural differences,
+                the snap-judgment effect persisted:
+                American and Indian subjects predicted the
+                winners of Brazilian political races based on
+                nothing more than a mug shot.</p>
+            </div>
+        </div>
+        <div id="Reproducibility" class="step" data-x="1000" data-y="100"
+            data-z="200" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="0.25">
+            <p>In very specific situations, it can be effectively illegal
+            under UK law to conduct a replication study</p>
+            <p class="source">Pete Etchells <em>Replication frustration:
+                what stops experiments being reliably repeated?</em> The
+            Guardian, 16 October, 2015</p> 
+        </div>
+        <div id="SocialScienceAtScale"  class="step" data-x="1400" data-y="-100"
+            data-z="200">
+            <h1>Studies at Massive Scale</h1>
+        </div>
+        <div id="SmartCities" class="step" data-x="1400" data-y="-100" data-z="200"
+            data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="0.25">
+            <img src="img/smartcity.png" />
+            <p class="source">Source:
+            <a href="http://www.emunicipality.com/">eMunicipality</a><p>
+        </div>
+    </div>
+    <div id="WebScience" class="step" data-x="1400" data-y="100" data-z="200"
+        data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="0.25">
+        <img src="img/web.jpg" />
+        <p class="source">Nigel Shadbolt, Wendy Hall, James A. Hendler,
+        William H. Dutton; <em>Web Science, a New Frontier</em>
+        Philosophical Transactions A, Royal Society</p>
+        <div class="notes">
+            <!--speaker notes-->
+            <p>The web is scale-less, it is a global, transformative
+            network worthy of its own multidisciplinary study. The unique
+            affordances of democratised, instant communication are only
+            slowly becoming apparent. The topic of web science itself is
+            underpinned entirely by the need for open access, transparency
+            and replicability, not least because it is such a dynamic
+            system.</p>
+        </div>
+    </div>
+    <div id="conclusion" class="step big" data-x="1200" data-y="0" data-z="0"
+        data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+
+        <p class="source"> 
+        <div class="notes">
+
+        </div>
+    </div>
+    <!-- keep an overview slide, you may wish to change the scaling and / or the co-ordinates -->
+    <div id="overview" class="step" data-x="0" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="2">
+    </div>
+
+</div>
+<!-- end of impress -->
+
+<!-- a bar at the top with a timer. You could put other text or info in here by adding more spans -->
+<div id="navbar"><div id="timebar">&nbsp;</div><p> <span id="timer">Click to Start Timer.</span></p><p><input id="notebox" type="checkbox" /><label for="notebox">show notes</label></p></div>
+
+<!-- a little menu based on the slides -->
+<div class="hint note">
+    <p>Use the spacebar or arrow keys to navigate</p>
+</div>
+
+<!-- clicking on this reveals the quick-navigation bar -->
+<div id="menubutton" tabindex="1">
+    <i class="fa fa-bars fa-lg"></i>
+</div>
+
+<!-- quickly get to different slides here, the list is populated from the IDs of the slides -->
+<div id="navmenu">
+</div>
+
+
+
+<script>
+if ("ontouchstart" in document.documentElement) {
+    document.querySelector(".hint").append('p').text('Tap on the left or right to navigate');
+}
+</script>
+
+<!-- LESS CSS -->
+<script src="lib/less.js/dist/less-1.7.5.js"></script>
+<!-- Load the presentation tool -->
+<script src="lib/impress.js/js/impress.js"></script>
+<!-- Load D3 -->
+<script src="lib/d3/d3.min.js"></script>
+<!-- Load the timer -->
+<script src="js/timer.js"></script>
+<!-- Menu -->
+<script src="js/navmenu.js"></script>
+
+<!-- Initialisation -->
+<script>impress().init();</script>
+<script>var time = 1000 * 60 * 20;
+var clock = timer(time, update);
+</script>
+</body>
+</html>
