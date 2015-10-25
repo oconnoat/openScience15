@@ -133,6 +133,10 @@ p.source {
     background: url('../img/Replication.jpg') center center no-repeat;
     background-size: cover;
 }
+/* fix to remove a stray footnote */
+.impress-on-MiningSocial div#TypesOfEvidence p{
+    display: none;
+}
 .impress-on-WebExperiments{
     background: url('../img/turk.jpg') center center no-repeat;
     background-size: contain;
@@ -163,11 +167,13 @@ p.source {
 div#title h1{
     text-align: center;
     margin: 10px;
-    margin-bottom: 10%;
     font-size: 2em;
+    margin-bottom: 40px;
 }
 div#title img{
     width: 100px;
+}
+div#title img#scienceeurope {
 }
 div#title div#foot{
     width: 100%;
@@ -200,8 +206,10 @@ div#definition li{
 }
 div#MiningSocial img {
     width:48%;
+    margin: 2px;
+    padding: 2px;
     float: left;
-    border: 1px solid black;
+    border: 1px solid #333;
 }
 div#RiskOfSharing i{ 
     text-align: center;
