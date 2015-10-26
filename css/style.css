@@ -4,13 +4,13 @@
  *
  *
  *
- * An example block below 
+ * An example block below
  * @font-face {
  * font-family: 'Satisfy';
  *  font-style: normal;
  *  font-weight: 400;
  *  src: local('Satisfy') url(http://themes.googleusercontent.com/static/fonts/satisfy/v4/tmRzDlQs5wZmOn9mIuLa-QLUuEpTyoUstqEm5AMlJo4.woff) format('woff'),
- *  local('Satisfy') url('Satisfy.woff') format('woff'); 
+ *  local('Satisfy') url('Satisfy.woff') format('woff');
  * }
  *
  *
@@ -76,14 +76,14 @@ p.source {
 
 }
 .impress-on-title div.hint{
-   display: block;
-   font-size: 14px;
-   font-style: italic;
-   text-align: center;
-   width: 250px;
-   position: absolute;
-   left: 50%;
-   margin-left: -125px;
+    display: block;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    width: 250px;
+    position: absolute;
+    left: 50%;
+    margin-left: -125px;
 }
 .impress-on-definition div#definition{
     background-color: #1976D2;
@@ -110,6 +110,13 @@ p.source {
 .impress-on-conclusion div#conclusion{
     background-color: #388E3C;
     color: #fff;
+}
+
+.impress-on-OpenImpact div#OpenImpact h1{
+    color: #fff;
+}
+.impress-on-OpenImpact{
+    background-color: rebeccapurple;
 }
 .impress-on-conclusion{
     background-color: #388E3C;
@@ -158,7 +165,26 @@ p.source {
 .impress-on-TypesOfEvidence div.contained {
     opacity: 1;
 }
+.impress-on-SocialScienceAtScale{
+    background: url('../img/controlroom.jpg') center center no-repeat;
+    background-size: cover;
+}
 
+.impress-on-SocialScienceAtScale div#SocialScienceAtScale{
+    background-color: rgba(255,255,255, 0.66);
+}
+
+.impress-on-SocialScienceAtScale div.contained{
+    opacity: 1;
+}
+.impress-on-overview {
+    background: url('../img/thankyou.jpg') center center no-repeat;
+    background-size: cover;
+}
+.impress-on-overview div.step{
+    background-color: #fff;
+    opacity: 0.85;
+}
 .impress-on-overview div.step:hover{
     opacity: 1;
     border: 5px solid #1976D2;
@@ -193,7 +219,7 @@ div#title p.contact{
 }
 
 
-div#definition{ 
+div#definition{
     color: #00aced;
 }
 div#definition ol{
@@ -204,18 +230,23 @@ div#definition li{
     display: inline-block;
     padding: 1%;
 }
-div#MiningSocial img {
+div#MiningSocial div.fig img {
+    border-bottom: 1px solid #333;
+    margin-bottom: 5px;
+    width:100%;
+}
+div#MiningSocial .fig {
     width:48%;
     margin: 2px;
     padding: 2px;
     float: left;
     border: 1px solid #333;
 }
-div#RiskOfSharing i{ 
+div#RiskOfSharing i{
     text-align: center;
     color: #00aced;
 }
-div#RiskOfSharing ol{ 
+div#RiskOfSharing ol{
     list-style: decimal outside none;
     margin-left: 25%;
 }
@@ -226,13 +257,13 @@ div#GovernmentData h1{
     font-weight: bold;
 }
 div#GovernmentData blockquote {
-  background: #f9f9f9;
-  border-left: 10px solid #ccc;
-  margin: 1.5em 10px;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
 }
 div#GovernmentData div{
     height: 350px;
@@ -247,7 +278,7 @@ div#Reproducibility p.quote{
     position: absolute;
     text-align: center;
     bottom: 25%;
-    width: 100%; 
+    width: 100%;
     background-color: rgba(64,64,64,0.75);
     color: rgba(255,255,225,1);
 }
@@ -256,19 +287,27 @@ div#GovernmentData div#talkEurope img{
     height: 300px;
 }
 div#GovernmentData blockquote:before {
-  color: #ccc;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
 }
 div#GovernmentData blockquote p {
-  font-family: monospace;
-  display: inline;
+    font-family: monospace;
+    display: inline;
 }
 div#WebExperiments img{
     width:100%;
+}
+div#OpenImpact h1{
+    text-align: center;
+    font-size: 2em;
+}
+div#OpenImpact div#europarl{
+    width: 100%;
+    background-color: #fff;
 }
 div#OpenImpact img{
     position: absolute;
@@ -287,7 +326,6 @@ div#sevenRules ol, div#conclusion ol{
     list-style: decimal outside none;
 }
 div#sevenRules li, div#conclusion li{
-    border-right: 2px solid #ddd;
     padding 2px;
     font-size: 0.66em;
     width: 80%;
