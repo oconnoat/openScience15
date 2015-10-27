@@ -196,6 +196,9 @@ div#title h1{
     font-size: 2em;
     margin-bottom: 40px;
 }
+div#title p.license{
+   font-size: 0.2em; 
+}
 div#title img{
     width: 100px;
 }
